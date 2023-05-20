@@ -11,46 +11,45 @@ body {
     display: flex;
     justify-content: center;
     color: white;
-    background-color: rgb(60, 32, 126);
+    background-color: black;
 }
 
 main {
     width: 500px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
-.divPeso, .divAltura, .divImc {
+.divPeso, .divAltura {
     width: 90%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-input, button {
-    padding: 10px;
+button, input {
+    padding: 20px;
     font-size: 20px;
+    border-radius: 5px;
     outline: none;
     border: none;
-    border-radius: 5px;
 }
 
 button {
-    background-color: rgb(121, 37, 170);
+    background-color: red;
     color: white;
-    cursor: pointer;
 }
 
 button:hover {
-    background-color: red;
+    background-color: rgb(146, 16, 16);
     transition: 0.3s;
 }
 
 @media (max-width: 500px) {
-    body, input, button {
+    input, button, body {
         font-size: 15px;
     }
 }
